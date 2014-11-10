@@ -7,6 +7,9 @@ ifeq ($(call my-dir),$(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFO
 	endif
 
 	display-hals := libgralloc libcopybit liblight libmemtrack libqservice libqdutils
+	ifneq ($(TARGET_PROVIDES_LIBLIGHT),true)
+		display-hals += liblight
+	endif
 
 	ifeq ($(TARGET_USES_SDE), true)
 	    sde-libs := displayengine/libs
