@@ -1,4 +1,4 @@
-ifeq ($(call my-dir),$(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM))
+ifeq ($(call my-dir),$(call project-path-for,qcom-display))
 
 	ifeq ($(call is-board-platform-in-list, thulium),true)
 	    TARGET_USES_SDE = true
