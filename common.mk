@@ -1,5 +1,4 @@
-#Common headers
-<<<<<<< HEAD
+#Common headersss
 common_includes := $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/libgralloc
 common_includes += $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/liboverlay
 common_includes += $(call project-path-for,qcom-display)/$(TARGET_BOARD_PLATFORM)/libcopybit
