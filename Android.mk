@@ -6,7 +6,7 @@ ifeq ($(call my-dir),$(call project-path-for,qcom-display))
 	    TARGET_USES_SDE = false
 	endif
 
-	display-hals := libgralloc libcopybit liblight libmemtrack libqservice libqdutils
+	display-hals := libgralloc libcopybit libmemtrack libqservice libqdutils
 	ifneq ($(TARGET_PROVIDES_LIBLIGHT),true)
 		display-hals += liblight
 	endif
